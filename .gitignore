@@ -1,0 +1,7 @@
+.gradle/
+build/
+.idea/
+run/
+launcher/node_modules/
+launcher/dist/
+launcher/mod/*.jar

@@ -1,0 +1,34 @@
+{
+  "name": "nizay-launcher",
+  "productName": "Nizay client",
+  "version": "0.1.0",
+  "description": "Nizay client launcher",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "dependencies": {
+    "minecraft-launcher-core": "^3.18.2"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "dev.nizay.launcher",
+    "productName": "Nizay client",
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "icon.png",
+      "mod/**"
+    ]
+  },
+  "author": "Nizay"
+}
